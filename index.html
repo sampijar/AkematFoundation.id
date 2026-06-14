@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Akemat Foundation</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header><h1>Akemat Foundation</h1></header>
+
+<div class="container">
+<section id="auth" class="card">
+<h2>Register/Login</h2>
+<input id="name" placeholder="Nama">
+<select id="role">
+<option value="beneficiary">Pencari Perawat & Donasi</option>
+<option value="nurse">Perawat</option>
+<option value="donor">Donatur</option>
+</select>
+<button onclick="login()">Masuk</button>
+</section>
+
+<section id="dashboard" style="display:none">
+<div class="card">
+<h2 id="welcome"></h2>
+<button onclick="logout()">Logout</button>
+</div>
+
+<div class="grid">
+<div class="card">
+<h3>Buat Postingan</h3>
+<input id="title" placeholder="Judul">
+<textarea id="desc" placeholder="Deskripsi"></textarea>
+<button onclick="createPost()">Posting</button>
+</div>
+
+<div class="card">
+<h3>Campaign Donasi</h3>
+<div id="campaigns"></div>
+</div>
+
+<div class="card">
+<h3>Perawat Tersedia</h3>
+<div id="nurses"></div>
+</div>
+
+<div class="card">
+<h3>Dashboard Saya</h3>
+<div id="myposts"></div>
+</div>
+</div>
+</section>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
